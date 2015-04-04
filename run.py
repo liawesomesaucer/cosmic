@@ -18,7 +18,6 @@ def main():
 	http_server = tornado.httpserver.HTTPServer(app)
 	http_server.listen(port)
 
-	print("running")
 	tornado.ioloop.IOLoop.instance().start();
 
 if __name__ == "__main__":

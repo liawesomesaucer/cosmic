@@ -5,6 +5,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from models import User, testUser, TutorSession
 
 from handlers.create_user import CreateUserHandler
+from db import *
 
 import json
 
@@ -50,7 +51,5 @@ class Application(tornado.web.Application):
 			(r"/json_test",		JsonTestHandler),
 			(r"/create_user",	CreateUserHandler)
 		]
-
-		#self.db = scoped_session(sessionmaker(bind=engine))
 
 		tornado.web.Application.__init__(self, handlers)
