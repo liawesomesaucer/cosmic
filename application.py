@@ -2,6 +2,7 @@ import os
 import tornado.web
 
 from sqlalchemy.orm import scoped_session, sessionmaker
+from models import User
 
 import json
 
