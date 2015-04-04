@@ -53,8 +53,8 @@ class User( Base ):
 		return "<User %s>" % name
 
 # For the tutor session
-class Session( Base ):
-	__tablename__ = 'session'
+class TutorSession( Base ):
+	__tablename__ = 'tutor_session'
 
 	startTime = Column( DateTime, 
 						default=datetime.datetime.utcnow, 
@@ -76,3 +76,18 @@ class Session( Base ):
 
 
 # class Review( Base ):			# Optional for review implementation
+
+
+testUser = {
+	"email" : "mwang@wang",
+	"name" : "Michael Wang",
+	"password" : "123",
+	"bio" : "Stuff stuff stuff",
+	"image" : "http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/2000px-Smiley.svg.png",
+	"tutor" : False,
+	"tutor_availability": False,
+	"tutor_rating": 3.5,
+	"tutor_fields": "English Chinese Japanese Mandarin ETC",
+	"tutor_price": 25,
+	"location" : ""
+}	# testUser, total of 11 fields

@@ -2,24 +2,9 @@ import os
 import tornado.web
 
 from sqlalchemy.orm import scoped_session, sessionmaker
-from models import User
+from models import User, testUser, TutorSession
 
 import json
-
-testUser = {
-	"name" : "Michael Wang",
-	"email" : "mwang@wang",
-	"password" : "123",
-	"description" : "Stuff stuff stuff",
-	"profile_pic" : "http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/2000px-Smiley.svg.png",
-	"interests" : "Eating Badminton Gymming",
-	"classes" : "CSE20 CSE30",
-	"yesUsers" : "",
-	"noUsers" : "",
-	"rating" : "4.9",
-	"rating_times" : "10",
-	"location" : "temporaryvariable"
-}	# testUser
 
 # Default handler
 class BaseHandler(tornado.web.RequestHandler):
