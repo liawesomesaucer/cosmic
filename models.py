@@ -1,6 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime
 from utils import *
+from db import *
+
 import utils, datetime
 
 from sqlalchemy.ext.declarative import declarative_base
