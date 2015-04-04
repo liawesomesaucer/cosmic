@@ -1,7 +1,9 @@
-from sqlalchemy import create_engine
-from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime
+from sqlalchemy import create_engine, Table
+from sqlalchemy import Column, Integer, String, Float, MetaData, Boolean, DateTime
 from utils import *
 from db import *
+
+metadata = MetaData()
 
 import utils, datetime
 
@@ -72,8 +74,6 @@ class TutorSession( Base ):
 
 	def end_session( self ):
 		return
-
-
 
 
 

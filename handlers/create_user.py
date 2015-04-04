@@ -2,9 +2,10 @@ import tornado.web
 import tornado.escape
 from db import session
 from models import User
+from application import BaseHandler
 
 # Creating new users
-class CreateUserHandler( tornado.web.RequestHandler ):
+class CreateUserHandler( BaseHandler ):
 
 	def post( self ):
 

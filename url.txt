@@ -1,0 +1,1 @@
+HEROKU_POSTGRESQL_ROSE_URL: postgres://nxuzisdyscgaic:XcSLKwBZ684bt6EMSml59pPcgm@ec2-54-163-235-165.compute-1.amazonaws.com:5432/d60q0hmibvq90e
