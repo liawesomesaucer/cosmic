@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConversationSample/ConversationSample.iml" filepath="$PROJECT_DIR$/ConversationSample/ConversationSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/ParseStarterProject/ParseStarterProject.iml" filepath="$PROJECT_DIR$/ParseStarterProject/ParseStarterProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/lahax.iml" filepath="$PROJECT_DIR$/lahax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moxtra/moxtra.iml" filepath="$PROJECT_DIR$/moxtra/moxtra.iml" />
     </modules>
   </component>
 </project>

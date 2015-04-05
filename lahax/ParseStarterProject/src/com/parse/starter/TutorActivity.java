@@ -74,7 +74,14 @@ public class TutorActivity extends Activity {
     }
 
     public void sendMessage(View view) {
+        Intent old_intent = getIntent();
+        String user_string = old_intent.getStringExtra("User");
         Intent intent = new Intent(this, LocalTutorActivity.class);
+        intent.putExtra("User", user_string);
+        startActivity(intent);
+    }
+    public void startSettingsActivity(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 }

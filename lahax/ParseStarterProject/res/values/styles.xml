@@ -4,4 +4,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@drawable/titlescreen</item>
     </style>
+    <style name="SignUpTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>

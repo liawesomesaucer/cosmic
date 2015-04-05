@@ -3,17 +3,36 @@
     <string name="parse_app_id">R6IOvMMG2EG4m6C1IG3axXiaN91xPKX2PxUsEGku</string>
     <string name="parse_client_key">Bh3yQzOPdIeHac4fzuT4KjMuJMTmkb6c3s5oq2AQ</string>
 
-    <string name="app_name">lahacks</string>
+    <string name="app_name">Tute</string>
     <string name="username_hint">Name</string>
     <string name="password_hint">Password</string>
     <string name="email_hint">Email Address</string>
     <string name="register_text">Register</string>
     <string name="login_text">Login</string>
     <string name="title_activity_tutor">tutorActivity</string>
+    <string name="settings">Settings</string>
+
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_google_login">GoogleLogin</string>
     <string name="title_activity_local_tutor_activity">local_tutor_activity</string>
     <string name="title_activity_local_tutor">LocalTutorActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="accountsettingtitle">Account Settings</string>
+    <string name="accountsettingname">Name</string>
+    <string name="accountsettingemail">Email (required)</string>
+    <string name="accountsettingpassword">Password</string>
+    <string name="accountsettingfields">What fields do you tutor in?</string>
+    <string name="accountsettingfields1">Algebra</string>
+    <string name="accountsettingfields2">Geometry</string>
+    <string name="accountsettingfields3">Calculus</string>
+    <string name="accountsettingfields4">Chemistry</string>
+    <string name="accountsettingfields5">Physics</string>
+    <string name="accountsettingfields6">Biology</string>
+    <string name="accountsettingtutor">Are you a tutor?</string>
+    <string name="accountsettingavail">Are you available?</string>
+    <string name="accountsettingbio">A short bio about yourself, less than 200 characters. Please include contact info.</string>
+    <string name="accountsettingcost">$ per hour</string>
 </resources>

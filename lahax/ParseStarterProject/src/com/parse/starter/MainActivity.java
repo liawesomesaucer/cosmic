@@ -126,7 +126,7 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
         @Override
         protected String doInBackground(Void... params) {
             DefaultHttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppostreq = new HttpPost("https://peaceful-falls-5727.herokuapp.com/login_user");
+            HttpPost httppostreq = new HttpPost("https://frozen-tor-9289.herokuapp.com/login_user");
 
             try {
                 Gson gson = new Gson();
@@ -141,7 +141,11 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
                     user = gson.fromJson(reader, User.class);
                     tutorActivity();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Incorrect Login Info", Toast.LENGTH_SHORT).show();
+                    MainActivity.this.runOnUiThread(new Runnable() {
+                        public void run() {
+                             Toast.makeText(getApplicationContext(), "Incorrect Login Info", Toast.LENGTH_SHORT).show();
+                             }
+                        });
                 }
             }
             catch (UnsupportedEncodingException e) {

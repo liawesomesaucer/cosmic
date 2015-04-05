@@ -14,4 +14,14 @@
         android:background="#EDE7F6"
         />
 
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingTop="5dp"
+        android:onClick="startSettingsActivity"
+        android:text="@string/settings"/>
+
 </LinearLayout>

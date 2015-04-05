@@ -1,0 +1,114 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AccountSettingsScrollView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:background="#E0E0E0">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/AccountSettingsTitle"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:text="@string/accountsettingtitle"
+            android:textSize="10pt"
+            android:paddingTop="30dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/AccountSettingsName"
+            android:layout_height="wrap_content"
+            android:hint="@string/accountsettingname"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent"
+            android:paddingTop="30dp"
+            android:maxLength="30">
+        </EditText>
+
+        <EditText
+            android:id="@+id/AccountSettingsEmail"
+            android:layout_height="wrap_content"
+            android:hint="@string/accountsettingemail"
+            android:inputType="textEmailAddress"
+            android:layout_width="fill_parent"
+            android:paddingTop="30dp"
+            android:maxLength="40">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/AccountSettingsPassword"
+            android:paddingTop="30dp"
+            android:hint="@string/accountsettingpassword"
+            android:maxLength="32"/>
+
+        <EditText
+            android:id="@+id/AccountSettingsBio"
+            android:layout_height="wrap_content"
+            android:hint="@string/accountsettingbio"
+            android:inputType="textMultiLine"
+            android:lines="7"
+            android:layout_width="fill_parent"
+            android:paddingTop="30dp"
+            android:maxLength="200">
+        </EditText>
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accountsettingtutor"
+            android:id="@+id/AccountSettingsTutorSwitch"
+            android:onClick="onTutorSwitchClick"
+            android:paddingTop="30dp" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accountsettingavail"
+            android:id="@+id/AccountSettingsAvailSwitch"
+            android:onClick="onAvailSwitchClick"
+            android:paddingTop="30dp" />
+
+        <Spinner
+            android:id="@+id/AccountSettingsFieldsSpinner"
+            android:layout_height="wrap_content"
+            android:prompt="@string/accountsettingfields"
+            android:layout_width="fill_parent"
+            android:entries="@array/accountsettingfieldslist"
+            android:spinnerMode="dropdown"
+            android:paddingTop="30dp"
+            android:clickable="false">
+        </Spinner>
+
+        <EditText
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/AccountSettingsCost"
+            android:layout_gravity="right"
+            android:hint="@string/accountsettingcost"
+            android:paddingTop="30dp"
+            android:maxLength="2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Changes"
+            android:id="@+id/AccountSettingsSubmitButton"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

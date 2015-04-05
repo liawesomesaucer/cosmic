@@ -65,7 +65,7 @@ public class SignUpActivity extends Activity implements GoogleApiClient.Connecti
 
     private void signUpUser() {
         DefaultHttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppostreq = new HttpPost("https://peaceful-falls-5727.herokuapp.com/create_user");
+        HttpPost httppostreq = new HttpPost("https://frozen-tor-9289.herokuapp.com/create_user");
 
         try {
         Gson gson = new Gson();
