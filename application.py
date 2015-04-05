@@ -191,6 +191,7 @@ class TheLastHandler(BaseHandler):
 			current_user = session.query(User).filter_by(email=email).first()
 			if not current_user:
 				self.write("-1")
+				
 			current_user.email = email
 			
 			if data["name"]: current_user.name = data["name"]
@@ -208,6 +209,9 @@ class TheLastHandler(BaseHandler):
 
 			session.add(current_user)
 			session.commit()
+
+			# success!
+			self.write("1")
 		except:
 			print("setting change failed")
 
