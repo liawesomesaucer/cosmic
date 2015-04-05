@@ -178,6 +178,38 @@ class LoginUserHandler(BaseHandler):
 			raise
 			self.write("-1")
 
+class TheLastHandler(BaseHandler):
+	#6 value, email always
+	def post(self):
+		try:
+			data = tornado.escape.json_decode(self.request.body)
+			email = data["email"]
+			if not email:
+				self.write("0")
+				return
+
+			current_user = session.query(User).filter_by(email=email).first()
+			if not current_user:
+				self.write("-1")
+			current_user.email = email
+			
+			if data["name"]: current_user.name = data["name"]
+			if data["password"]: current_user.password = data["password"]
+			if data["bio"]: current_user.bio = data["bio"]
+			if data["image"]: current_user.image = data["image"]
+			if data["tutor"]: 
+				current_user.tutor = data["tutor"]
+				if data["tutor_availability"] is not None:
+					current_user.tutor_availability = data["tutor_availability"]
+				if data["tutor_availability"] is False:
+					current_user.tutor_availability = data["tutor_availability"]
+				if data["tutor_price"]:
+					current_user.tutor_price = data["tutor_price"]
+
+			session.add(current_user)
+			session.commit()
+		except:
+			print("setting change failed")
 
 class AllUserHandler(BaseHandler):
 
@@ -227,7 +259,8 @@ class Application(tornado.web.Application):
 			(r"/create_user",	CreateUserHandler),
 			(r"/login_user",	LoginUserHandler),
 			(r"/json_test",		JsonHandler),
-			(r"/all_users",		AllUserHandler)
+			(r"/all_users",		AllUserHandler),
+			(r"/settings",		TheLastHandler)
 		]
 
 		#self.db = scoped_session(sessionmaker(bind=engine))
