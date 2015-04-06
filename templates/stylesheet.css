@@ -78,7 +78,7 @@ a {
 .switchbutton  {
 	font-size:22px;
 	width:300px;
-	margin:9px;
+	margin:4px;
 	padding:10px;
 	text-align:center;
 	-moz-border-radius: 5px;
@@ -194,9 +194,14 @@ background: url(clock_bw.jpg) no-repeat center center;
 }
 
 .footer {
-	background-color: #e6e6e6;
+	/*background-color: #e6e6e6;*/
+	/*font-size:18px;*/
 	width:100%;
 	height:50px;
+	margin-bottom:20px;
+}
+.footdesc {
+	font-size:18px;
 }
 .form-opt {
 	width:100%;
