@@ -54,6 +54,13 @@ a {
 	color:none;
 	text-decoration:none;
 }
+.background {
+	background-color:#666666;
+	background:url(piano_bw.jpg);
+ 	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+  	-o-background-size: cover;
+}
 .white {
 	color:white;
 }
