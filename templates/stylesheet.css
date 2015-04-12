@@ -6,6 +6,7 @@ html, body, div, p{
 body {
 	margin-top:-20px;
 }
+
 h1, h2, h3, h4, p, h5{
 	font:64px/64px Raleway, Roboto, "Liberation Sans", Segoe UI Light, Helvetica;
 	color:#666666;
@@ -103,7 +104,7 @@ a {
 
 }
 .box-wrapper {
-	width:315px;
+	width:310px;
 	height:500px;
 	float:center;
 	display:inline-block;
