@@ -39,7 +39,7 @@
 			<br>
 			<h3 id="what">Learn what you want, when you want it, and where you need it</h3>
 
-			<div style="width:100%;margin:auto; text-align:center">
+			<div style="width:100%;margin:auto; text-align:center;">
 				<a href="javascript:learners()"><h3 class="switchbutton learners" style="background-color:#666666; color:white; border-color:#666666;">Learners</h3></a>
 				<a href="javascript:tutors()"><h3 class="switchbutton tutors">Tutors</h3></a>
 			</div>
@@ -49,7 +49,7 @@
 				<div class="box box1">
 				</div>
 
-				<p id="desc1" style="line-height:54px;text-align:center;position:relative;width:290px"class="desc">Dozens of subjects to choose from</p>
+				<p id="desc1" style="line-height:54px;text-align:center;position:relative;width:290px"class="desc">Dozens of subjects to choose</p>
 			</div>
 			<div class="box-wrapper wrap2">
 				<h4 id="box2">When</h4>
@@ -99,7 +99,7 @@
 
 				<h5>Technologies</h5>
 
-				<p>Back-end - <span style="font-size:16px;">Python-Tornado web server hosted on Heroku; PostgreSQL Database</span></p>
+				<p>Back-end - <span style="font-size:16px;">Python-Tornado web server hosted on Heroku; PostgreSQL</span></p>
 				<p>Application - <span style="font-size:16px;">Android platform with Google-Play</span></p>
 				<p>Web - <span style="font-size:16px;">Built on HTML, CSS, Javascript, and JQuery</span></p>
 
@@ -212,7 +212,7 @@ function learners() {
 	$( "#box2" ).html( "When" );
 	$( "#box3" ).html( "Where" );
 
-	$( "#desc1" ).html( "Dozens of subjects to choose from" );
+	$( "#desc1" ).html( "Dozens of subjects to choose" );
 	$( "#desc2" ).html( "Request a tutor, on demand" );
 	$( "#desc3" ).html( "Always find tutors close by" );
 
@@ -244,6 +244,7 @@ xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			reply = JSON.parse(xmlhttp.responseText);
 			if (reply==1) {
+				$( "#message" ).css( {"color":"#000"});
 				$( "#message" ).html("Success! You've been registered.");
 			}
 		}
